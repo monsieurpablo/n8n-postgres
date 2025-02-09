@@ -41,7 +41,6 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
-    command: /bin/sh -c "npm install -g axios jq qs crypto && n8n start"
 
   postgres:
     image: postgres:16-alpine
