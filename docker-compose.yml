@@ -5,6 +5,7 @@ services:
     container_name: n8n
     build: .
     restart: always
+    pull_policy: always
     volumes:
       - n8n_data:/home/node/.n8n
     environment:
